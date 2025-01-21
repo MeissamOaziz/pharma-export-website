@@ -8,6 +8,100 @@
     <meta name="author" content="Pharma Export Partners Inc.">
     <title>Pharma Export Partners</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .section:nth-child(even) {
+            background-color: #004d99;
+            color: #ffffff;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #ffffff;
+            color: #004d99;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .hero {
+            background: url('Cannabis-export.png') center/cover no-repeat;
+            color: #ffffff;
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #ff9900;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .product-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 400px;
+            margin-left: auto;
+        }
+
+        .product-images img {
+            width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .product-images img:hover {
+            transform: scale(1.1);
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+        }
+
+        button {
+            background: #004d99;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #004d99;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 <body>
     <header class="hero">
@@ -27,13 +121,21 @@
 
     <section id="services" class="section">
         <div class="container">
-            <h2>Our Expertise</h2>
-            <ul>
-                <li>Competitive Pricing on Flower Supply</li>
-                <li>Global Compliance Expertise</li>
-                <li>EU GMP Certified Facilities</li>
-                <li>Efficient and Scalable Operations</li>
-            </ul>
+            <div class="text-content">
+                <h2>Our Expertise</h2>
+                <ul>
+                    <li>Competitive Pricing on Flower Supply</li>
+                    <li>Global Compliance Expertise</li>
+                    <li>EU GMP Certified Facilities</li>
+                    <li>Efficient and Scalable Operations</li>
+                </ul>
+            </div>
+            <div class="product-images">
+                <img src="Suppositories.png" alt="Suppositories">
+                <img src="Vapes.png" alt="Vape">
+                <img src="CannabisOil.png" alt="Cannabis Oil">
+                <img src="Hashish.png" alt="Hashish">
+            </div>
         </div>
     </section>
 
