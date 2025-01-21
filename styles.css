@@ -1,80 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pharma Export Partners Inc. - Trusted supplier of GACP and GMP-certified medical cannabis globally.">
+    <meta name="keywords" content="Medical Cannabis Export, GMP Certified, Cannabis Suppliers, Cannabis for Germany, UK, Australia, Israel, Czech Republic">
+    <meta name="author" content="Pharma Export Partners Inc.">
+    <title>Pharma Export Partners</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <h1>Pharma Export Partners Inc.</h1>
+            <p>Your Trusted Partner in Canadian Cannabis Exports</p>
+            <a href="#contact" class="btn">Contact Us</a>
+        </div>
+    </header>
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Who We Are</h2>
+            <p>We establish the most extensive network of GACP and GMP-certified facilities, delivering unique and sought-after cannabis flower products across global markets.</p>
+            <p>Our products include flower and extracts such as hashish, oils, topicals (creams and lotions), edible oil, and vapes.</p>
+            <div class="product-images">
+                <img src="Suppositories.png" alt="Suppositories">
+                <img src="Vapes.png" alt="Vape">
+                <img src="CannabisOil.png" alt="Cannabis Oil">
+                <img src="Click Dose Pen.png" alt="Click Dose Pen">
+                <img src="Hashish.png" alt="Hashish">
+            </div>
+        </div>
+    </section>
 
-.hero {
-    background: url('A_professional,_clean_website_hero_section_with_a_.png') center/cover no-repeat;
-    color: #004d99;
-    padding: 150px 0;
-    text-align: center;
-    position: relative;
-}
+    <section id="expertise" class="section">
+        <div class="container">
+            <h2>Global Compliance Expertise</h2>
+            <p>GMP Part 1 certification from German Authorities (BfArM), offering bespoke support for challenging markets such as Poland, New Zealand, Australia, and Israel.</p>
+            <p>Competitive Pricing: Highly competitive pricing on both flower supply and tolling compared to existing suppliers.</p>
+            <p>Canadian GMP Facility: Domestically processed flower, exported as finished products to international markets.</p>
+            <p>Using our Canadian GMP-certified facilities eliminates complexities involved in routing through other countries. This ensures faster access to EU markets without unnecessary delays.</p>
+            <p>Processing domestically in Canada avoids middlemen fees, ensuring better margins and predictable pricing.</p>
+        </div>
+    </section>
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Email us at: <a href="mailto:info@phexportpartners.com">info@phexportpartners.com</a></p>
+            <p>Phone: +1-519-505-4389</p>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
 
-.hero p {
-    font-size: 24px;
-    margin-bottom: 30px;
-}
-
-.hero .btn {
-    display: inline-block;
-    background: #ff9900;
-    color: #fff;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 20px;
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.section {
-    padding: 50px 0;
-    text-align: center;
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-h1, h2 {
-    color: #004d99;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-}
-
-button {
-    background: #004d99;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-footer {
-    background: #004d99;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-}
+    <footer>
+        <p>&copy; 2025 Pharma Export Partners Inc. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
