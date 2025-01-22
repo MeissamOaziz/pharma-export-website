@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-    background: url('Export2.png') center/cover no-repeat, #004d99;
+    background: url('Export3.png') center/cover no-repeat, #004d99;
     color: #ffffff;
     padding: 150px 0;
     text-align: center;
@@ -66,6 +66,16 @@ body {
 #procurement {
     background: #004d99;
     color: #ffffff;
+}
+
+.table div {
+    background: #004d99;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1, h2 {
@@ -122,19 +132,6 @@ h1, h2 {
 
 .product-images img:hover {
     transform: scale(1.1);
-}
-
-.table {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    text-align: center;
-}
-
-.table div {
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
 }
 
 form input, form textarea {
