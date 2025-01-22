@@ -79,6 +79,19 @@
             transform: scale(1.1);
         }
 
+        .table {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .table div {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
         form input, form textarea {
             width: 100%;
             padding: 10px;
@@ -107,57 +120,33 @@
     <header class="hero">
         <div class="container">
             <h1>Pharma Export Partners Inc.</h1>
-            <p>Your Trusted Partner in Medical Cannabis Exports</p>
-            <a href="#contact" class="btn">Contact Us</a>
+            <p>Delivering a diverse range of unique and sought-after cannabis flower products with unmatched global market pathways.</p>
         </div>
     </header>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Who We Are</h2>
-            <p>We establish the most extensive network of GACP and GMP-certified facilities, delivering unique and sought-after cannabis flower products across global markets.</p>
-        </div>
-    </section>
-
     <section id="services" class="section">
         <div class="container">
-            <div class="text-content">
-                <h2>Our Expertise</h2>
-                <ul>
-                    <li>Competitive Pricing on Flower Supply</li>
-                    <li>Global Compliance Expertise</li>
-                    <li>EU GMP Certified Facilities</li>
-                    <li>Efficient and Scalable Operations</li>
-                </ul>
-            </div>
-            <div class="product-images">
-                <img src="Suppositories.png" alt="Suppositories">
-                <img src="Vapes.png" alt="Vape">
-                <img src="CannabisOil.png" alt="Cannabis Oil">
-                <img src="Hashish.png" alt="Hashish">
-            </div>
+            <h2>Our Value Proposition</h2>
+            <p>We empower our clients with exceptional services by combining cost efficiency and rapid cycle times, enabling successful completion of orders up to 1,000 kg+ per month within 30-45 days.</p>
+            <ul>
+                <li><strong>Streamlined Compliance Process:</strong> Using our Canadian GMP-certified facilities eliminates complexities involved in routing through other countries, ensuring faster access to EU markets without unnecessary delays.</li>
+                <li><strong>Cost Savings:</strong> Processing domestically in Canada avoids middlemen fees, ensuring better margins and predictable pricing.</li>
+                <li><strong>Regulatory Assurance:</strong> Products meet EU GMP Part 1 standards, certified directly by German Authorities (BfArM), avoiding risks of non-compliance.</li>
+                <li><strong>Enhanced Efficiency:</strong> Integrated systems allow cycle times of 30-45 days, enabling faster responses to market demands.</li>
+                <li><strong>Direct Export Advantage:</strong> Products are processed, certified, and exported as finished goods directly to target markets, eliminating extra steps.</li>
+            </ul>
         </div>
     </section>
 
-    <section id="why-us" class="section">
+    <section id="procurement" class="section">
         <div class="container">
-            <h2>Why Choose Us</h2>
-            <p>We provide unparalleled market access, cost optimization, and regulatory assurance to our clients globally.</p>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email us at: <a href="mailto:info@phexportpartners.com">info@phexportpartners.com</a></p>
-            <p>Phone: +1-519-505-4389</p>
-            <p>Address: 23 Barrel Yards Blvd, Suite 2601</p>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+            <h2>Procurement of Inventory</h2>
+            <div class="table">
+                <div><h3>Comprehensive Supply Network</h3><p>Ensures consistent access to high-quality inventory to meet global market demands.</p></div>
+                <div><h3>Cost-Effective Procurement</h3><p>Leveraging economies of scale to negotiate competitive pricing for inventory.</p></div>
+                <div><h3>Inventory Consistency</h3><p>Strong quality control ensures product stability and compliance with global standards.</p></div>
+                <div><h3>Simplified Logistics</h3><p>Integrated procurement with tolling and export systems for reduced complexity and faster delivery times.</p></div>
+            </div>
         </div>
     </section>
 
