@@ -26,7 +26,7 @@ body {
     padding: 20px 50px;
     display: inline-block;
     border-radius: 10px;
-    max-width: 60%;
+    max-width: 50%;
     margin: 0 auto;
 }
 
@@ -60,19 +60,26 @@ body {
     text-align: center;
     background: #fff;
     border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 h1, h2 {
     color: #004d99;
 }
 
-.text-content {
-    flex: 1;
-    text-align: left;
-    padding-right: 20px;
+.value-proposition {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.value-proposition div {
+    flex: 1 1 calc(20% - 20px);
+    background: #004d99;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .product-images {
@@ -84,13 +91,27 @@ h1, h2 {
 }
 
 .product-images img {
-    width: 22%;
+    width: 16%;
+    height: auto;
     border-radius: 5px;
     transition: transform 0.3s ease;
 }
 
 .product-images img:hover {
     transform: scale(1.1);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.table div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 form input, form textarea {
