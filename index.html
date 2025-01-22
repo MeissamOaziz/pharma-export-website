@@ -4,63 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pharma Export Partners Inc. - Trusted supplier of GACP and GMP-certified medical cannabis globally.">
-    <meta name="keywords" content="Medical Cannabis Export, GMP Certified, Cannabis Suppliers, Cannabis for Germany, UK, Australia, Israel, Czech Republic">
+    <meta name="keywords" content="Medical Cannabis Export, GMP Certified, Cannabis Suppliers, Cannabis for Germany, UK, Australia, Israel, Czech Republic, Poland, Canada Cannabis Export, GMP, GACP, EU GMP">
     <meta name="author" content="Pharma Export Partners Inc.">
     <title>Pharma Export Partners</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-
-        .section:nth-child(even) {
-            background-color: #004d99;
-            color: #ffffff;
-        }
-
-        .section:nth-child(odd) {
-            background-color: #ffffff;
-            color: #004d99;
-        }
-
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 50px 0;
-        }
-
-        .hero {
-            background: url('Cannabis-export.png') center/cover no-repeat;
-            color: #ffffff;
-            padding: 150px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .hero p {
-            font-size: 24px;
-            margin-bottom: 30px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: #ff9900;
-            color: #fff;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 20px;
-        }
-    </style>
 </head>
 <body>
     <header class="hero">
@@ -73,7 +20,8 @@
     <section id="value-proposition" class="section">
         <div class="container">
             <h2>Our Value Proposition</h2>
-            <ul>
+            <p><strong>Why choose Pharma Export Partners</strong></p>
+            <ul style="text-align: left;">
                 <li><strong>Streamlined Compliance Process:</strong> Using our Canadian GMP-certified facilities eliminates complexities involved in routing through other countries, ensuring faster access to EU markets without unnecessary delays.</li>
                 <li><strong>Cost Savings:</strong> Processing domestically in Canada avoids middlemen fees, ensuring better margins and predictable pricing.</li>
                 <li><strong>Regulatory Assurance:</strong> Products meet EU GMP Part 1 standards, certified directly by German Authorities (BfArM), avoiding risks of non-compliance.</li>
@@ -93,11 +41,23 @@
                 <div><h3>Simplified Logistics</h3><p>Integrated procurement with tolling and export systems for reduced complexity and faster delivery times.</p></div>
             </div>
             <div class="product-images">
-                <img src="Suppositories.png" alt="Suppositories">
-                <img src="Vapes.png" alt="Vapes">
-                <img src="CannabisOil.png" alt="Cannabis Oil">
-                <img src="Hashish.png" alt="Hashish">
+                <img src="Suppositories.png" alt="Suppositories" style="height: 50%; width: 66%;">
+                <img src="Vapes.png" alt="Vapes" style="height: 50%; width: 66%;">
+                <img src="CannabisOil.png" alt="Cannabis Oil" style="height: 50%; width: 66%;">
+                <img src="Hashish.png" alt="Hashish" style="height: 50%; width: 66%;">
             </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </section>
 
