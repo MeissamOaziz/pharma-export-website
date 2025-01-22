@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-    background: url('Export3.png') center/cover no-repeat, #004d99;
+    background: url('Cannabis-export.png') center/cover no-repeat, #004d99;
     color: #ffffff;
     padding: 150px 0;
     text-align: center;
@@ -69,11 +69,11 @@ body {
 }
 
 .table div {
-    background: #004d99;
-    color: #ffffff;
+    background: #ffffff;
+    color: #004d99;
     padding: 20px;
     border-radius: 10px;
-    border: 1px solid #ffffff;
+    border: 1px solid #004d99;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
