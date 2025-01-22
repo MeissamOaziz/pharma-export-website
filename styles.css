@@ -13,7 +13,7 @@ body {
 }
 
 .hero {
-    background: url('Export2.png') center/cover no-repeat, #004d99;
+    background: url('Cannabis-export.png') center/cover no-repeat, #004d99;
     color: #ffffff;
     padding: 150px 0;
     text-align: center;
@@ -68,6 +68,13 @@ body {
     color: #ffffff;
 }
 
+.table {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
 .table div {
     background: #ffffff;
     color: #004d99;
@@ -76,6 +83,7 @@ body {
     border: 1px solid #004d99;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(25% - 20px);
 }
 
 h1, h2 {
