@@ -1,70 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pharma Export Partners Inc. - Trusted supplier of GACP and GMP-certified medical cannabis globally.">
-    <meta name="keywords" content="Medical Cannabis Export, GMP Certified, Cannabis Suppliers, Cannabis for Germany, UK, Australia, Israel, Czech Republic, Poland, Canada Cannabis Export">
-    <meta name="author" content="Pharma Export Partners Inc.">
-    <title>Pharma Export Partners</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="hero">
-        <div class="container">
-            <div class="text-box">
-                <h1>Pharma Export Partners Inc.</h1>
-                <p>Delivering a diverse range of unique and sought-after cannabis flower products with unmatched global market pathways.</p>
-            </div>
-        </div>
-    </header>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
 
-    <section id="value-proposition" class="section">
-        <div class="container">
-            <h2>Our Value Proposition</h2>
-            <p><strong>Why choose Pharma Export Partners?</strong></p>
-            <ul style="text-align: left;">
-                <li><strong>Streamlined Compliance Process:</strong> Using our Canadian GMP-certified facilities eliminates complexities involved in routing through other countries, ensuring faster access to EU markets without unnecessary delays.</li>
-                <li><strong>Cost Savings:</strong> Processing domestically in Canada avoids middlemen fees, ensuring better margins and predictable pricing.</li>
-                <li><strong>Regulatory Assurance:</strong> Products meet EU GMP Part 1 standards, certified directly by German Authorities (BfArM), avoiding risks of non-compliance.</li>
-                <li><strong>Enhanced Efficiency:</strong> Integrated systems allow cycle times of 30-45 days, enabling faster responses to market demands.</li>
-                <li><strong>Direct Export Advantage:</strong> Products are processed, certified, and exported as finished goods directly to target markets, eliminating extra steps.</li>
-            </ul>
-        </div>
-    </section>
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
 
-    <section id="procurement" class="section">
-        <div class="container">
-            <h2>Procurement of Inventory</h2>
-            <div class="table">
-                <div><h3>Comprehensive Supply Network</h3><p>Ensures consistent access to high-quality inventory to meet global market demands.</p></div>
-                <div><h3>Cost-Effective Procurement</h3><p>Leveraging economies of scale to negotiate competitive pricing for inventory.</p></div>
-                <div><h3>Inventory Consistency</h3><p>Strong quality control ensures product stability and compliance with global standards.</p></div>
-                <div><h3>Simplified Logistics</h3><p>Integrated procurement with tolling and export systems for reduced complexity and faster delivery times.</p></div>
-            </div>
-            <div class="product-images">
-                <img src="Suppositories.png" alt="Suppositories">
-                <img src="Vapes.png" alt="Vapes">
-                <img src="CannabisOil.png" alt="Cannabis Oil">
-                <img src="Hashish.png" alt="Hashish">
-            </div>
-        </div>
-    </section>
+.hero {
+    background: url('Cannabis-export.png') center/cover no-repeat, #004d99;
+    color: #ffffff;
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+}
 
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </section>
+.hero .text-box {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    display: inline-block;
+    border-radius: 10px;
+    max-width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
 
-    <footer>
-        <p>&copy; 2025 Pharma Export Partners Inc. All Rights Reserved.</p>
-    </footer>
-</body>
-</html>
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    display: inline-block;
+    background: #ff9900;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+#procurement {
+    background: #004d99;
+    color: #ffffff;
+}
+
+h1, h2 {
+    color: #004d99;
+}
+
+.value-proposition {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.value-proposition div {
+    flex: 1 1 calc(20% - 20px);
+    background: #004d99;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    min-width: 220px;
+}
+
+.product-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-images img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-images img:hover {
+    transform: scale(1.1);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.table div {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+}
+
+button {
+    background: #004d99;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background: #004d99;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
