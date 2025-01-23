@@ -1,3 +1,32 @@
+#google_translate_element {
+    text-align: right;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.goog-te-gadget {
+    font-size: 16px !important;
+    font-family: Arial, sans-serif;
+    color: #004d99;
+}
+
+.goog-te-gadget img {
+    display: none !important;
+}
+
+.goog-te-gadget-simple {
+    background-color: #004d99 !important;
+    border: 1px solid #fff !important;
+    padding: 5px;
+    border-radius: 5px;
+    color: #ffffff !important;
+    cursor: pointer;
+}
+
+.goog-te-gadget-simple:hover {
+    background-color: #ff9900 !important;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
