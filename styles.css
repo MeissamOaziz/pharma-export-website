@@ -61,19 +61,6 @@ body {
         scroll-snap-align: start;
         margin: 0 10px;
     }
-
-    .product-images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 10px;
-        justify-items: center;
-    }
-
-    .product-images img {
-        width: 100px;
-        height: 100px;
-    }
 }
 
 @keyframes fadeInLeft {
@@ -188,25 +175,15 @@ h1, h2 {
     flex-grow: 1;
 }
 
-/* Procurement section images */
-.product-images {
+form {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: nowrap;
-    margin-top: 30px;
-}
-
-.product-images img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex-direction: column;
+    align-items: center;
 }
 
 form input, form textarea {
-    width: 100%;
+    width: 50%;
+    max-width: 500px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ddd;
