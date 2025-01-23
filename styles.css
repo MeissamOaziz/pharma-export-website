@@ -114,6 +114,10 @@ h1, h2 {
     font-size: 20px;
     margin-bottom: 15px;
     font-weight: bold;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .value-box p {
