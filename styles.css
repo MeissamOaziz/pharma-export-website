@@ -38,12 +38,14 @@ body {
         font-size: 28px;
         max-width: 80%;
         margin: 0 auto;
+        line-height: 1.2;
     }
     
     .hero p {
         font-size: 16px;
         max-width: 90%;
         margin: 10px auto;
+        line-height: 1.4;
     }
 
     .value-boxes, .table {
@@ -51,6 +53,7 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
+        position: relative;
     }
 
     .value-box, .table div {
@@ -59,17 +62,37 @@ body {
         margin: 0 10px;
     }
 
+    .value-boxes::before, .value-boxes::after,
+    .table::before, .table::after {
+        content: '<';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .value-boxes::before, .table::before {
+        left: 10px;
+    }
+
+    .value-boxes::after, .table::after {
+        content: '>';
+        right: 10px;
+    }
+
     .product-images {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 10px;
-        justify-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
     }
 
     .product-images img {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 10px;
     }
 }
 
@@ -169,12 +192,6 @@ h1, h2 {
     animation: fadeInLeft 1s forwards 0.9s;
 }
 
-.value-box h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
 .value-box img {
     width: 80px;
     height: 80px;
@@ -189,10 +206,6 @@ h1, h2 {
     font-size: 14px;
     line-height: 1.6;
     flex-grow: 1;
-}
-
-.product-images img:hover {
-    transform: scale(1.1);
 }
 
 form input, form textarea {
