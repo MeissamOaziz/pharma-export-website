@@ -46,14 +46,14 @@ body {
         margin: 10px auto;
     }
 
-    .value-boxes {
+    .value-boxes, .table {
         display: flex;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
     }
 
-    .value-box {
+    .value-box, .table div {
         flex: 0 0 80%;
         scroll-snap-align: start;
         margin: 0 10px;
