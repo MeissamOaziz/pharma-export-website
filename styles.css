@@ -53,46 +53,13 @@ body {
         overflow-x: auto;
         scroll-snap-type: x mandatory;
         -webkit-overflow-scrolling: touch;
-        position: relative;
+        gap: 20px;
     }
 
     .value-box, .table div {
         flex: 0 0 80%;
         scroll-snap-align: start;
         margin: 0 10px;
-    }
-
-    .value-boxes::before, .value-boxes::after,
-    .table::before, .table::after {
-        content: '<';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
-    }
-
-    .value-boxes::before, .table::before {
-        left: 10px;
-    }
-
-    .value-boxes::after, .table::after {
-        content: '>';
-        right: 10px;
-    }
-
-    .product-images {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-
-    .product-images img {
-        width: 80px;
-        height: 80px;
-        margin: 5px;
-        border-radius: 10px;
     }
 }
 
