@@ -122,9 +122,6 @@ h1, h2 {
 .value-box img {
     width: 80px;
     height: 80px;
-    background: #fff;
-    padding: 10px;
-    border-radius: 10px;
     object-fit: contain;
     margin-bottom: 15px;
 }
