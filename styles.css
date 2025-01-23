@@ -1,7 +1,8 @@
 #google_translate_element {
-    text-align: right;
-    margin-top: 10px;
-    margin-right: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
 .goog-te-gadget {
@@ -17,7 +18,7 @@
 .goog-te-gadget-simple {
     background-color: #004d99 !important;
     border: 1px solid #fff !important;
-    padding: 5px;
+    padding: 5px 10px;
     border-radius: 5px;
     color: #ffffff !important;
     cursor: pointer;
