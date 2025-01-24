@@ -62,6 +62,18 @@ body {
     transform: translateX(-50px);
     animation: fadeInLeft 1s forwards 0.3s;
 }
+.hero-logo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 80%;
+    }
+}
 
 @media (max-width: 768px) {
     .hero h1 {
