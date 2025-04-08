@@ -13,41 +13,41 @@
         }
 
         .password-prompt input {
-        padding: 10px;
-        font-size: 16px;
-        margin-right: 10px;
-        width: 400px;
-    }
+            padding: 10px;
+            font-size: 16px;
+            margin-right: 10px;
+            width: 400px;
+        }
 
-    .password-prompt button {
-        padding: 10px;
-        font-size: 16px;
-        cursor: pointer;
-    }
+        .password-prompt button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    .hidden-content {
-        display: none;
-        text-align: center;
-    }
+        .hidden-content {
+            display: none;
+            text-align: center;
+        }
 
-    /* Spreadsheet container to allow scrolling */
-    .spreadsheet-container {
-        width: 100%;
-        overflow-x: auto;
-        white-space: nowrap;
-        max-width: 100vw;
-    }
+        /* Spreadsheet container to allow scrolling */
+        .spreadsheet-container {
+            width: 100%;
+            overflow-x: auto;
+            white-space: nowrap;
+            max-width: 100vw;
+        }
 
-    /* Responsive iframe */
-    .spreadsheet-container iframe {
-        min-width: 1800px; /* Adjusted width to ensure columns are visible */
-        max-width: 100%;
-        height: 600px;
-        border: none;
-        transform: scale(0.8); /* Zoom out effect */
-        transform-origin: top left;
-    }
-</style>
+        /* Responsive iframe */
+        .spreadsheet-container iframe {
+            min-width: 1800px; /* Adjusted width to ensure columns are visible */
+            max-width: 100%;
+            height: 600px;
+            border: none;
+            transform: scale(0.8); /* Zoom out effect */
+            transform-origin: top left;
+        }
+    </style>
 </head>
 <body>
     <!-- Password Prompt -->
@@ -58,39 +58,39 @@
     </div>
 
     <!-- Hidden Content -->
-<div class="hidden-content" id="hiddenContent">
-    <h1>Exclusive Product Data</h1>
-    <div class="spreadsheet-container">
-        <iframe id="spreadsheetFrame"
-            src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSacg2wwgYnG1v4m3pSRQaPrM2DQ8L1zh_WRiPcGIeeCOGJYi95UL_111KaDEdNZAbCOAVPKuikIKuY/pubhtml?gid=1220007730&amp;single=true&amp;widget=true&amp;headers=false">
-        </iframe>
+    <div class="hidden-content" id="hiddenContent">
+        <h1>Exclusive Product Data</h1>
+        <div class="spreadsheet-container">
+            <iframe id="spreadsheetFrame"
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSacg2wwgYnG1v4m3pSRQaPrM2DQ8L1zh_WRiPcGIeeCOGJYi95UL_111KaDEdNZAbCOAVPKuikIKuY/pubhtml?gid=1220007730&amp;single=true&amp;widget=true&amp;headers=false">
+            </iframe>
+        </div>
     </div>
-</div>
 
-<script>
-    // Encoded password (Base64 of "PHX25!")
-    const encodedPassword = "UEhYMjUh";
+    <script>
+        // Encoded password (Base64 of "password")
+        const encodedPassword = "MjAyNVBIWEAh";
 
-    function verifyPassword() {
-        const input = document.getElementById("passwordInput").value;
-        const decodedPassword = atob(encodedPassword);
+        function verifyPassword() {
+            const input = document.getElementById("passwordInput").value;
+            const decodedPassword = atob(encodedPassword);
 
-        if (input === decodedPassword) {
-            sessionStorage.setItem("authenticated", "true");
-            document.getElementById("passwordPrompt").style.display = "none";
-            document.getElementById("hiddenContent").style.display = "block";
-        } else {
-            alert("Incorrect password. Please try again or contact phexportpartners@gmail.com to request access.");
+            if (input === decodedPassword) {
+                sessionStorage.setItem("authenticated", "true");
+                document.getElementById("passwordPrompt").style.display = "none";
+                document.getElementById("hiddenContent").style.display = "block";
+            } else {
+                alert("Incorrect password. Please try again or contact phexportpartners@gmail.com to request access.");
+            }
         }
-    }
 
-    // Auto-check if the user has already entered the password
-    window.onload = function () {
-        if (sessionStorage.getItem("authenticated") === "true") {
-            document.getElementById("passwordPrompt").style.display = "none";
-            document.getElementById("hiddenContent").style.display = "block";
-        }
-    };
-</script>
+        // Auto-check if the user has already entered the password
+        window.onload = function () {
+            if (sessionStorage.getItem("authenticated") === "true") {
+                document.getElementById("passwordPrompt").style.display = "none";
+                document.getElementById("hiddenContent").style.display = "block";
+            }
+        };
+    </script>
 </body>
 </html>
