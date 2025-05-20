@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Protected Page</title>
     <link rel="stylesheet" href="styles.css"> <style>
@@ -58,7 +59,7 @@
         <h1>Exclusive Product Data</h1>
         <div class="spreadsheet-container">
             <iframe id="spreadsheetFrame"
-                src="https://onedrive.live.com/embed?resid=87634C6FA5669B6F!21415&authkey=!AM8yZ790V53N-8E&em=2&wdAllowInteractivity=True">
+                src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRpfQwEvYMTcAu2mr7zwqgYE8Z1z8JLbFax9TSKyWKl8YIPIbWxYIgSaKAcXXx5Gw/pubhtml?gid=1466448425&amp;single=true&amp;widget=true&amp;headers=false">
             </iframe>
         </div>
     </div>
@@ -70,7 +71,6 @@
         function verifyPassword() {
             const input = document.getElementById("passwordInput").value;
             
-            // For "@CannaWorld420!", direct atob decoding is sufficient
             const decodedPassword = atob(encodedPassword);
 
             if (input === decodedPassword) {
