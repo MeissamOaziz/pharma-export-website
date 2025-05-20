@@ -4,8 +4,7 @@
     <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
     <title>Protected Page</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
+    <link rel="stylesheet" href="styles.css"> <style>
         .password-prompt {
             text-align: center;
             margin-top: 20%;
@@ -65,21 +64,14 @@
     </div>
 
     <script>
-        // Encoded password (Base64 of "£CannaWorld420€")
-        const encodedPassword = "wqNDYW5uYVdvcmxkNDIwwoU=";
+        // Encoded password (Base64 of "@CannaWorld420!")
+        const encodedPassword = "QENhbm5hV29ybGQ0MjAh";
 
         function verifyPassword() {
             const input = document.getElementById("passwordInput").value;
             
-            // Decode Base64 to a binary string
-            const binaryString = atob(encodedPassword);
-            // Convert binary string to a Uint8Array
-            const bytes = new Uint8Array(binaryString.length);
-            for (let i = 0; i < binaryString.length; i++) {
-                bytes[i] = binaryString.charCodeAt(i);
-            }
-            // Decode Uint8Array as UTF-8
-            const decodedPassword = new TextDecoder().decode(bytes); // Default is 'utf-8'
+            // For "@CannaWorld420!", direct atob decoding is sufficient
+            const decodedPassword = atob(encodedPassword);
 
             if (input === decodedPassword) {
                 sessionStorage.setItem("authenticated", "true");
@@ -95,8 +87,6 @@
             if (sessionStorage.getItem("authenticated") === "true") {
                 document.getElementById("passwordPrompt").style.display = "none";
                 document.getElementById("hiddenContent").style.display = "block";
-                // Optionally, if you want to pre-fill the password field for some reason (generally not recommended for security)
-                // you could try to set it here, but the focus is on showing content if authenticated.
             }
         };
     </script>
