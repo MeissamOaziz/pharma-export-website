@@ -50,14 +50,12 @@
     </style>
 </head>
 <body>
-    <!-- Password Prompt -->
     <div class="password-prompt" id="passwordPrompt">
         <h2>Enter Password to Access</h2>
         <input type="password" id="passwordInput" placeholder="Enter Password received from our representative">
         <button onclick="verifyPassword()">Submit</button>
     </div>
 
-    <!-- Hidden Content -->
     <div class="hidden-content" id="hiddenContent">
         <h1>Exclusive Product Data</h1>
         <div class="spreadsheet-container">
@@ -68,8 +66,8 @@
     </div>
 
     <script>
-        // Encoded password (Base64 of "password")
-        const encodedPassword = "MjAyNVBIWEAh";
+        // Encoded password (Base64 of "£CannaWorld420€")
+        const encodedPassword = "wqNDYW5uYVdvcmxkNDIwwoU=";
 
         function verifyPassword() {
             const input = document.getElementById("passwordInput").value;
